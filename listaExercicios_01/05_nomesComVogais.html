@@ -6,10 +6,10 @@
     //Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
 
     //ENTRADA
-    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    const listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
 
     //PROCESSAMENTO
-    let nomesComVogais = [];
+    const nomesComVogais = [];
     for (nome of listaDeNomes) {
         switch (nome.toUpperCase().charAt(0)) {
             case "A":
@@ -21,7 +21,6 @@
                 break;
         }
     }
-
     //SAÍDA
     document.write(nomesComVogais.sort());
 </script>
